@@ -1,19 +1,40 @@
 <!DOCTYPE html>
 <html>
- <head>
- <title>Lux Academy Introduction to Node and MongoDB</title>
- </head>
- <body>
- <h1>Into to Node and MongoDB</h1>
- <form method="post" action="/addname">
- <label>Enter Your Name</label>
- <br>
- <input type="text" name="firstName" placeholder="Enter First Name..." required>
- <input type="text" name="lastName" placeholder="Enter Last Name..." required>
- <input type="email" name="email" placeholder="Enter Email..." required>
- <input type="number" name="phoneNumber" placeholder="Enter Phone Number..." required>
- <input type="text" name="comment" placeholder="Enter Your Mesage..." required>
- <button type="submit" value="Add Name">Submit </button>
- </form>
- </body>
+
+<head>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <title>Lux Academy Introduction to Node and MongoDB</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="d-flex justify-content-center">Into to Node and MongoDB</h1>
+        <hr>
+        <form method="post" action="/addname">
+            <label>Enter Your Name</label>
+            <br>
+            <div class="form-group">
+                <input class="form-control" type="text" name="firstName" placeholder="Enter First Name..." required>
+                <br>
+                <input class="form-control" type="text" name="lastName" placeholder="Enter Last Name..." required>
+                <br>
+            </div>
+            <div class="form-group">
+                <input class="form-control" type="email" name="email" placeholder="Enter Email..." required><br>
+            <div class="form-group"></div>
+            <textarea class="form-control" rows="7" type="text" name="comment"
+                placeholder="Enter Your Mesage..."> </textarea>
+    </div><br>
+    <button class="btn btn-primary" type="submit" value="Add Name"> Submit </button>
+    </form>
+    </div>
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</body>
+
 </html>
